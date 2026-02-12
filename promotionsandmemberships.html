@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Cyberion Theme Park's Promotions and Memberships Page Heading Information -->
+<head>
+    <!-- 
+        Meta Tags Section:
+            - Unicode Character Encoding Standard
+            - Viewport (Default Setting: Mobile First) sets width of the web
+            page to be the same as a user device's screen width and sets initial
+            zoom level for when the page is first loaded by the browser
+            - Site Description and Author boosts search engines' indexing
+            as part of SEO
+    -->
+    <meta charset="UTF-8">
+    <meta name="description" content="...">
+    <meta name="author" content="Cyberion Theme Park">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyberion Theme Park - Promotions and Memberships</title>
+    
+    <!-- Import external stylesheet to customize web page's appearance and feel -->
+    <link type="text/css" rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- Import date picker library to use its functions in the web page -->
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Import apple touch icon as a visual representation of the web page
+    on a iOS user's home screen -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <!-- Import android chrome icon as a visual representation of the web page
+    when chrome is accessed by a user's android phone -->
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./assets/img/android-chrome-512x512.png">
+    <!-- Import favicons as a visual representation of the web page when being
+    accessed by a user's browser or as a taskbar shortcut -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/site.webmanifest">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="wrapper">
+                <a href="./index.html">
+                    <div class="logo">
+                        <img src="./assets/img/cyberion-themepark-logo.webp" alt="Cyberion Theme Park logo">
+                    </div>
+                </a>
+                    <!-- use label element to toggle the checked and unchecked functionality of checkbox -->
+                    <label class="menu">
+                        <input type="checkbox" class="close">
+                    </label>
+                </div>
+            <div class="links">
+                <ul class="headings">
+                    <li><a href="./promotionsandmemberships.html">Promotions & Memberships</a></li>
+                    <li><a href="./rides.html">Attractions</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="./promotionsandmemberships.html">Book Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="bg-gradient">
+
+        <!-- Slideshow Section For Promotions -->
+        <section id="slideshow-section">
+            <div class="slideshow-container">
+                <h3 class="pm-page-sect-heading">Promotions</h3>
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="./assets/img/promo-ad1.jpg" alt="Image of Promotion Advertisement One">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/promo-ad2.jpg" alt="Image of Promotion Advertisement Two">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/promo-ad3.jpg" alt="Image of Promotion Advertisement Three">
+                    </div>
+                </div>
+                <div class="thumbnails">
+                    <label for="slide1">
+                        <img src="./assets/img/promo-ad1.jpg" alt="Image of Promotion Advertisement One" class="thumbnail">
+                    </label>
+                    <label for="slide2">
+                        <img src="./assets/img/promo-ad2.jpg" alt="Image of Promotion Advertisement Two" class="thumbnail">
+                    </label>
+                    <label for="slide3">
+                        <img src="./assets/img/promo-ad3.jpg" alt="Image of Promotion Advertisement Three" class="thumbnail">
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Select Type of Ticket Section -->
+        <section id="ticket-type-section">
+            <div class="ticket-type-container">
+                <h3 class="pm-page-sect-heading">Select Type of Tickets</h3>
+                <div class="header-section">
+                    <div class="toggle-container">
+                        <div class="toggle-section">
+                            <span class="label-text">Singapore Citizens</span>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="checkbox" onclick="togglePrices();">
+                                <span class="toggle-slider"></span>
+                            </label>
+                            <span class="label-text">Tourists</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-options">
+                    <div class="packages-wrapper">
+                        <div class="package-card">
+                            <h1 class="package-title">Child</h1>
+                            <img src= "./assets/img/child-pass-thumbnail.webp" alt="Image of Child Pass">
+                            <h2 class="price-standard">$170.00</h2>
+                            <h2 class="price-discount">$100.00</h2>
+                            <ol class="features-list">
+                                <li class="feature-item">Character meet and greet sessions</li>
+                                <li class="feature-item">Access to kid's entertainment shows</li>
+                                <li class="feature-item">Complimentary kid's meals provided</li>
+                            </ol>
+                            <a href="#" class="purchase-button">Buy Now</a>
+                        </div>
+                        <div class="package-card">
+                            <h1 class="package-title">Adult</h1>
+                            <img src= "./assets/img/adult-pass-thumbnail.webp" alt="Image of Adult Pass">
+                            <h2 class="price-standard">$210.00</h2>
+                            <h2 class="price-discount">$165.00</h2>
+                            <ol class="features-list">
+                                <li class="feature-item">Discounted rates for parking </li>
+                                <li class="feature-item">Complimentary refreshments provided</li>
+                                <li class="feature-item">Discounts for souvenir purchases</li>
+                            </ol>
+                            <a href="#" class="purchase-button">Buy Now</a>
+                        </div>
+                        <div class="package-card">
+                            <h1 class="package-title">Member</h1>
+                            <img src= "./assets/img/member-pass-thumbnail.webp" alt="Image of Member Pass">
+                            <h2 class="price-standard">$250.00</h2>
+                            <h2 class="price-discount">$195.00</h2>
+                            <ol class="features-list">
+                                <li class="feature-item">Fast-track entry lanes for all rides</li>
+                                <li class="feature-item">Exclusive members-only lounge</li>
+                                <li class="feature-item">Priority access to dining reservations </li>
+                            </ol>
+                            <a href="#" class="purchase-button">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Select Date Section -->
+        <section id="date-selection-section">
+            <div class="date-selection-container">
+                <h3 class="pm-page-sect-heading">Select Date</h3>
+                <input type="text" id="datepicker" placeholder="Choose your date" readonly>
+            </div>
+        </section>
+
+        <!-- Select Number of Days Section -->
+        <section id="days-selection-section">
+            <div class="days-selection-container">
+                <h3 class="pm-page-sect-heading">Select the Number of Days</h3>
+                <div class="days-selection">
+                    <div class="day-option">
+                        <div class="circle">1</div>
+                        <p class="price">From $104/day</p>
+                    </div>
+                    <div class="day-option">
+                        <div class="circle">2</div>
+                        <p class="price">From $155/day</p>
+                    </div>
+                    <div class="day-option">
+                        <div class="circle">3</div>
+                        <p class="price">From $130/day</p>
+                    </div>
+                    <div class="day-option">
+                        <div class="circle">4</div>
+                        <p class="price">From $112/day</p>
+                    </div>
+                    <div class="day-option">
+                        <div class="circle">5</div>
+                        <p class="price">From $96/day</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Select Number of Tickets Section -->
+        <section id="ticket-selector-section">
+            <div class="ticket-selector-container">
+                <h3 class="pm-page-sect-heading">Select Number of Tickets</h3>
+                <div class="ticket-counter">
+                    <div class="ticket-counter-container">
+                        <span>Tickets</span>
+                        <button id="decrement" class="counter-button">-</button>
+                        <span id="ticket-count" class="ticket-count">1</span>
+                        <button id="increment" class="counter-button">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Select Type of Add-ons Section -->
+        <section id="addon-options-section">
+            <div class="addon-options-container">
+                <h3 class="pm-page-sect-heading">Select Type of Add-ons</h3>
+                <div class="addons-wrapper">
+                    <div class="addons-card">
+                        <h1>Weather Insurance</h1>
+                        <img src="./assets/img/weather-insurance-thumbnail.webp" alt="Image of Rainy Day Insurance Add-on" class="addon-image">
+                        <h2>$150.00</h2>
+                        <ul class="addon-features-list">
+                            <li class="addon-feature-item">
+                                <b>Rain Refund Guarantee - </b> Receive a full refund if the park is closed for more than 2 hours
+                            </li>
+                            <li class="addon-feature-item">
+                                <b>Complimentary Ponchos - </b> Free ponchos for all members
+                            </li>
+                        </ul>
+                        <a href="#" class="add-on-purchase-button">Buy Now</a>
+                    </div>
+                    <div class="addons-card">
+                        <h1>Shuttle Service</h1>
+                        <img src="./assets/img/shuttle-service-thumbnail.webp" alt="Image of Park Shuttle Service Add-on" class="addon-image">
+                        <h2>$195.00</h2>
+                        <ul class="addon-features-list">
+                            <li class="addon-feature-item">
+                                <b>Flexible Pickup Times -</b> Multiple pickup times throughout the day
+                            </li>
+                            <li class="addon-feature-item">
+                                <b>Express Park Entry -</b> Skip the lines with direct entry shuttle service for your convenience
+                            </li>
+                        </ul>
+                        <a href="#" class="add-on-purchase-button">Buy Now</a>
+                    </div>
+                    <div class="addons-card">
+                        <h1>Pet Daycare</h1>
+                        <img src="./assets/img/pet-daycare-thumbnail.webp" alt="Image of Pet Daycare Service Add-on" class="addon-image">
+                        <h2>$175.00</h2>
+                        <ul class="addon-features-list">
+                            <li class="addon-feature-item">
+                                <b>Live Pet Cams -</b> Monitor your pets through our live pet cams available on our app.
+                            </li>
+                            <li class="addon-feature-item">
+                                <b>Pet Play Areas -</b> Secure, supervised play areas for your pet
+                            </li>
+                        </ul>
+                        <a href="#" class="add-on-purchase-button">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-links">
+                        <a href="./promotionsandmemberships.html">Promotions & Memberships</a>
+                        <a href="./rides.html">Attractions</a>
+                        <a href="#">Dining</a>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.flaticon.com/free-icons/facebook" title="Facebook icons created by Freepik - Flaticon">
+                            <img src="./assets/img/facebook-logo-icon.png" alt="Facebook Logo">
+                        </a>
+                        <a href="https://www.flaticon.com/free-icons/instagram-logo" title="Instagram logo icons created by Pixel perfect - Flaticon">
+                            <img src="./assets/img/instagram-logo-icon.png" alt="Instagram Logo">
+                        </a>
+                        <a href="https://www.flaticon.com/free-icons/tiktok" title="tiktok icons" title="Tiktok icons created by cobynecz - Flaticon">
+                            <img src="./assets/img/tiktok-logo-icon.png" alt="Tiktok Logo">
+                        </a>
+                        <a href="https://www.flaticon.com/free-icons/brands-and-logotypes" title="brands and logotypes icons created by Freepik - Flaticon">
+                            <img src="./assets/img/twitter-logo-icon.png" alt="Twitter Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <a href="#">Privacy Policy & Terms of Use</a>
+                    <p>Copyright © Cyberion Theme Park Singapore</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- defer attribute will download the script in parallel with parsing the web page and will only execute AFTER the page finishes parsing -->
+    <script type="text/javascript" src="./js/promotionsandmemberships.js" defer></script>
+</body>
+</html>
